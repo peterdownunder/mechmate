@@ -1,0 +1,7 @@
+loadrt debounce cfg=1 
+setp debounce.0.delay 100 #this sets the delay 100 iterations of the servo-thread
+addf debounce.0 servo-thread
+net deb-probe-in debounce.0.0.in <= parport.0.pin-15-in-not
+net probe debounce.0.0.out
+net probe => motion.probe-input
+

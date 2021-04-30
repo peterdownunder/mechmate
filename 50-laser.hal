@@ -1,0 +1,10 @@
+# loadusr -Wn vfd hy_vfd -n vfd -d /dev/ttyUSB0 -p none -r 9600
+
+# net spindle-cmf-rpm-abs => vfd.speed-command
+# net spindle-cw spindle.0.forward => vfd.spindle-forward
+# net spindle-ccw spindle.0.reverse => vfd.spindle-reverse
+# net on spindle.0.on => vfd.spindle-on
+
+
+# And now the logic's output is what controls the laser relay.
+net laser motion.digital-out-00 => parport.0.pin-16-out

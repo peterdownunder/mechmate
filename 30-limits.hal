@@ -1,0 +1,48 @@
+# all homing and limit
+# net all-limit-home  <= parport.0.pin-13-in
+# setp lut5.0.function 0x10000
+
+# net all-limit-home => lut5.0.in-4
+# net all-limit <= lut5.0.out
+
+# net homing-x <= axis.0.homing => lut5.0.in-0
+# net homing-y <= axis.1.homing => lut5.0.in-1
+# net homing-z <= axis.2.homing => lut5.0.in-2
+
+
+# net all-limit-home => axis.0.home-sw-in
+# net all-limit => axis.0.neg-lim-sw-in
+# net all-limit => axis.0.pos-lim-sw-in
+
+
+# net all-limit-home => axis.1.home-sw-in
+# net all-limit => axis.1.neg-lim-sw-in
+# net all-limit => axis.1.pos-lim-sw-in
+
+# net all-limit-home => axis.2.home-sw-in
+# net all-limit => axis.2.neg-lim-sw-in
+# net all-limit => axis.2.pos-lim-sw-in
+
+# shared home limit on y
+
+net both-home-x => joint.0.home-sw-in
+net both-home-x => joint.0.neg-lim-sw-in
+net both-home-x => joint.0.pos-lim-sw-in
+
+net both-home-x     <= parport.0.pin-12-in
+
+net both-home-y => joint.1.home-sw-in
+net both-home-y => joint.1.neg-lim-sw-in
+net both-home-y => joint.1.pos-lim-sw-in
+
+net both-home-y     <= parport.0.pin-11-in
+
+net both-home-z => joint.2.home-sw-in
+net both-home-z => joint.2.neg-lim-sw-in
+net both-home-z => joint.2.pos-lim-sw-in
+
+net both-home-z     <= parport.0.pin-13-in-not
+
+#setp parport.0.pin-13-in-invert true
+
+

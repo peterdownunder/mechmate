@@ -1,0 +1,14 @@
+--- Qtvcp Screen Started on: Wed, Jan 06 2021 11:02:24 ---
+Wed06 11:02 WARNING -Basic_Probe macro files not found -Probing disabled
+Wed06 11:02 CRITICAL - no preference file found, enable preferences in screenoptions widget
+Wed06 11:02 Machine OFF
+Wed06 11:02 Tool 0: No Tool
+Wed06 11:02 Machine ON
+Wed06 11:02 Homing is REQUIRED to jog requested coordinate
+because joint (0) home_sequence is synchronized (-1)
+
+Wed06 11:03 Homing is REQUIRED to jog requested coordinate
+because joint (0) home_sequence is synchronized (-1)
+
+Wed06 11:03 homing sequence already in progress
+Wed06 11:03 Machine OFF
